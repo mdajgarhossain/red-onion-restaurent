@@ -1,0 +1,16 @@
+.navbar-section{
+    border-bottom: 1px solid lightgray;
+}
+.navbar-brand{
+    width: 200px;
+}
+.nav-item{
+    margin-right: 25px;
+    font-size: 20px;
+    padding-left: 15px !important;
+}
+.signUpLink{
+    background-image: linear-gradient(45deg, #ff4565, #ff4565);
+    border-radius: 18px;
+    width: 100px;
+}

@@ -1,0 +1,24 @@
+.banner{
+    background-image: url("../../images/bannerbackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    background-color: #fcf4e0;
+}
+.search-box{
+    margin-left: 28%;
+    margin-bottom: 10%;
+    margin-top: 2%;
+}
+.search-box button{
+    background-image: linear-gradient(45deg, #ff4565, #ff4565);
+    border-radius: 18px;
+    width: 100px;
+    font-style: italic;
+}
+.search-box input{
+    border: 3px solid lightgray;
+    border-radius: 18px;
+    font-style: italic;
+}
