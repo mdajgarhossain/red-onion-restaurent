@@ -1,0 +1,16 @@
+
+.nav-item{
+    color: black;
+    cursor: pointer;
+}
+.nav-item .active{
+    color: #ff4565;
+    border-bottom: 2px solid #ff4565;
+    font-weight: bold;
+}
+.foods{
+    margin: 30px;
+}
+.nav-container{
+    margin-bottom: 30px;
+}
