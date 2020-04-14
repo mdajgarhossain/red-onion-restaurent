@@ -1,0 +1,146 @@
+[
+    {
+        "id": 1,
+        "category": "breakfast",
+        "image": "https://i.ibb.co/wdGPR9j/breakfast1.png",
+        "title": "Eggs Benedict",
+        "shortDescription": "It's a nice and delicious food.",
+        "price": "$9.99"
+    },
+    {
+        "id": 2,
+        "category": "breakfast",
+        "image": "https://i.ibb.co/m0dXLb8/breakfast2.png",
+        "title": "Breakfast Sandwich",
+        "shortDescription": "It's a nice and delicious food.",
+        "price": "$7.50"
+    },
+    {
+        "id": 3,
+        "category": "breakfast",
+        "image": "https://i.ibb.co/z2vrNkV/breakfast3.png",
+        "title": "Baked Chicken",
+        "shortDescription": "It's a nice and delicious food.",
+        "price": "$12.99"
+    },
+    {
+        "id": 4,
+        "category": "breakfast",
+        "image": "https://i.ibb.co/d46ndDW/breakfast4.png",
+        "title": "Bagel and Cream cheese",
+        "shortDescription": "It's a nice and delicious food.",
+        "price": "$6.50"
+    },
+    {
+        "id": 5,
+        "category": "breakfast",
+        "image": "https://i.ibb.co/Dk6hJcz/breakfast5.png",
+        "title": "Full Breakfast Fried Egg Toast Brunch",
+        "shortDescription": "It's a nice and delicious food.",
+        "price": "$12.99"
+    },
+    {
+        "id": 6,
+        "category": "breakfast",
+        "image": "https://i.ibb.co/xCp9LWT/breakfast6.png",
+        "title": "Toast Croissant Fried Egg",
+        "shortDescription": "It's a nice and delicious food.",
+        "price": "$6.99"
+    },
+    {
+        "id": 7,
+        "category": "lunch",
+        "image": "https://i.ibb.co/yX3sBKh/lunch1.png",
+        "title": "Beef Steak",
+        "shortDescription": "It's a nice and delicious food.",
+        "price": "$10.99"
+    },
+    {
+        "id": 8,
+        "category": "lunch",
+        "image": "https://i.ibb.co/xmbt7tg/lunch2.png",
+        "title": "Honey-soy-Glazed-salmon with peppers",
+        "shortDescription": "It's a nice and delicious food.",
+        "price": "$9.99"
+    },
+    {
+        "id": 9,
+        "category": "lunch",
+        "image": "https://i.ibb.co/zhbmqNv/lunch3.png",
+        "title": "Tarragon-rubbed-salmon",
+        "shortDescription": "It's a nice and delicious food.",
+        "price": "$9.99"
+    },
+    {
+        "id": 10,
+        "category": "lunch",
+        "image": "https://i.ibb.co/f2xpt8m/lunch4.png",
+        "title": "Bangladeshi Lunch",
+        "shortDescription": "It's a nice and delicious food.",
+        "price": "$17.99"
+    },
+    {
+        "id": 11,
+        "category": "lunch",
+        "image": "https://i.ibb.co/jD2fMqK/lunch5.png",
+        "title": "Fried Chicken Bento",
+        "shortDescription": "It's a nice and delicious food.",
+        "price": "$15.99"
+    },
+    {
+        "id": 12,
+        "category": "lunch",
+        "image": "https://i.ibb.co/GcsQfkh/lunch6.png",
+        "title": "Samudrik Fish with Lotapata",
+        "shortDescription": "It's a nice and delicious food.",
+        "price": "$10.50"
+    },
+    {
+        "id": 13,
+        "category": "dinner",
+        "image": "https://i.ibb.co/C6Z7tz7/dinner1.png",
+        "title": "Baked chicken",
+        "shortDescription": "It's a nice and delicious food.",
+        "price": "$8.99"
+    },
+    {
+        "id": 14,
+        "category": "dinner",
+        "image": "https://i.ibb.co/P5G5ZT0/dinner2.png",
+        "title": "Lemony Salmon Piccata",
+        "shortDescription": "It's a nice and delicious food.",
+        "price": "$14.99"
+    },
+    {
+        "id": 15,
+        "category": "dinner",
+        "image": "https://i.ibb.co/TvvZgrM/dinner3.png",
+        "title": "Garlic Butter Baked Salmon",
+        "shortDescription": "It's a nice and delicious food.",
+        "price": "$9.99"
+    },
+    {
+        "id": 16,
+        "category": "dinner",
+        "image": "https://i.ibb.co/ykYMgz2/dinner4.png",
+        "title": "French fries with Cheese",
+        "shortDescription": "It's a nice and delicious food.",
+        "price": "$9.99"
+    },
+    {
+        "id": 17,
+        "category": "dinner",
+        "image": "https://i.ibb.co/G3c1qj2/dinner5.png",
+        "title": "Pork Tenderloin with Quinoa Pilaf",
+        "shortDescription": "It's a nice and delicious food.",
+        "price": "$19.99"
+    },
+    {
+        "id": 18,
+        "category": "dinner",
+        "image": "https://i.ibb.co/c3X2wQJ/dinner6.png",
+        "title": "Salmon with Grapefruit & Lenti Salad",
+        "shortDescription": "It's a nice and delicious food.",
+        "price": "$11.99"
+    }
+]
