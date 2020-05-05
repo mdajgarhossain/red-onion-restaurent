@@ -8,7 +8,7 @@ function Banner() {
                 <h1 className="display-4 font-italic text-muted">Best foods waiting for your belly</h1>
                 <form className="form-inline search-box">
                     <input className="form-control mr-sm-2 col-5" type="search" placeholder="Search your favorite food" aria-label="Search"/>
-                    <button className="btn my-2 my-sm-0" type="submit">Search</button>
+                    <button className="btn my-2 my-sm-0 text-white" type="submit">Search</button>
                 </form>
             </div>
         </div>

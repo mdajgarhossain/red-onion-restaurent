@@ -2,14 +2,15 @@
     margin-bottom: 20px;
 }
 .foodItem:hover{
-    cursor: pointer;
+    /* cursor: pointer; */
     box-shadow:  0px -2px 22px -1px lightgrey;
     border-radius: 20px !important;
 }
-.card img{
-    /* width: 250px; */
-    margin-top: 10px;
-}
 .card{
     border: none !important;
+    padding: 10px 5px 0px 5px;
+}
+.foodItem .linked-item{
+    text-decoration: none;
+    color: black;
 }
