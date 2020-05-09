@@ -13,6 +13,7 @@ import NoMatch from '../NoMatch/NoMatch';
 import FoodItemDetails from '../FoodItemDetails/FoodItemDetails';
 import { addToDatabaseCart, getDatabaseCart, processOrder, removeFromDatabaseCart } from '../../databaseManager';
 import foodsData from '../../foodsData/foods.json';
+import { AuthProvider, PrivateRoute } from '../Login/useAuth';
 
 function Restaurant() {
     const [cart, setCart] = useState([]);
@@ -62,37 +63,38 @@ function Restaurant() {
     };
 
     return (
-        <div className="restaurant">            
-            <Router>
-                <Switch>
-                    <Route exact path="/">
-                        <Header cart={cart}/>
-                        <Banner />
-                        <Foods />
-                    </Route>
-                    <Route path="/cart">
-                        <Header cart={cart}/>
-                        <Cart 
-                            cart={cart}
-                            handlePlaceOrder={handlePlaceOrder}
-                            removeItem={removeItem}
-                            orderPlaced={orderPlaced}
-                        />
-                    </Route>
-                    <Route path="/login">
-                        <Header cart={cart}/>
-                        <Login />
-                    </Route>
-                    <Route path="/food/:foodId">
-                        <Header cart={cart}/>
-                        <FoodItemDetails handleCart={handleCart}/>
-                    </Route>
-                    <Route path="*">
-                        <Header cart={cart}/>
-                        <NoMatch />
-                    </Route>
-                </Switch>
-            </Router>
+        <div className="restaurant">
+            <AuthProvider>          
+                <Router>
+                    <Switch>
+                        <Route exact path="/">
+                            <Header cart={cart}/>
+                            <Banner />
+                            <Foods />
+                        </Route>
+                        <PrivateRoute path="/cart">
+                            <Header cart={cart}/>
+                            <Cart 
+                                cart={cart}
+                                handlePlaceOrder={handlePlaceOrder}
+                                removeItem={removeItem}
+                                orderPlaced={orderPlaced}
+                            />
+                        </PrivateRoute>
+                        <Route path="/login">
+                            <Login />
+                        </Route>
+                        <Route path="/food/:foodId">
+                            <Header cart={cart}/>
+                            <FoodItemDetails handleCart={handleCart}/>
+                        </Route>
+                        <Route path="*">
+                            <Header cart={cart}/>
+                            <NoMatch />
+                        </Route>
+                    </Switch>
+                </Router>
+            </AuthProvider>
         </div>
     )
 }

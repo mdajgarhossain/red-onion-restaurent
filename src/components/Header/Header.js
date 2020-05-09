@@ -4,11 +4,12 @@ import logo from '../../images/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartPlus } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
-
+import { useAuth } from '../Login/useAuth';
 
 function Header(props) {
     // console.log(props);
     const {cart} = props;
+    const auth = useAuth();
     
     return (
         <div className="navbar-section">
@@ -25,12 +26,20 @@ function Header(props) {
                             <Link to="/cart" className="nav-item nav-link">
                                 <FontAwesomeIcon icon={faCartPlus} /> <span>{cart.length}</span>
                             </Link>
-                            <Link to="/login" className="nav-item nav-link">
-                                Login
-                            </Link>
-                            <Link to="/signUp" className="nav-item nav-link signUpLink text-white">
+                            {
+                                auth.user ? 
+                                <Link to="/cart" className="nav-link">{auth.user.displayName}</Link> 
+                                :
+                                <Link to="/login" className="nav-item nav-link">Login</Link>
+                            }
+                            {
+                                auth.user ? 
+                                <Link to="/cart" onClick={() => {auth.signOut()}} className="nav-item nav-link signUpLink text-white">Sign Out</Link>
+                                :
+                                <Link to="/login" className="nav-item nav-link signUpLink text-white">
                                 Sign Up
-                            </Link>
+                                </Link>
+                            }
                         </div>
                     </div>
                 </nav>
