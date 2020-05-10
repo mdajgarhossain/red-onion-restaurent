@@ -33,7 +33,7 @@ function Foods(props) {
                 </ul>
             </div>
 
-            <div className="container">
+            <div className="container my-5">
                 <div className="row justify-content-around">
                     {
                         selectedCategory.map(item => 

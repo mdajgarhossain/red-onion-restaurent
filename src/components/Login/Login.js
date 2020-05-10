@@ -80,7 +80,7 @@ function Login() {
                         <button className="btn btn-danger btn-block"  type="submit">Sign Up</button>
                     </div>
                     <div className="option text-center">
-                        <label onClick={() => setReturningUser(true)}>Already Have an Account?</label>
+                        <label onClick={() => setReturningUser(true)}>Already Have an Account</label>
                     </div>
                 </form>
 

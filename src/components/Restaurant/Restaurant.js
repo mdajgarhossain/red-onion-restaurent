@@ -59,9 +59,11 @@ function Restaurant() {
     };
 
     const handlePlaceOrder = () => {
-        setCart([]);
-        setOrderPlaced(true);
-        processOrder();
+        if(cart.length > 0) {
+            setCart([]);
+            setOrderPlaced(true);
+            processOrder();
+        }
     };
 
     return (
@@ -95,7 +97,6 @@ function Restaurant() {
                             <Footer />
                         </Route>
                         <Route path="*">
-                            <Header cart={cart}/>
                             <NoMatch />
                         </Route>
                     </Switch>

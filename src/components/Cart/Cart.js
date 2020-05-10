@@ -29,14 +29,9 @@ function Cart(props) {
                                     />
                                 )
                         }
-                        {
-                            orderPlaced && <div className="text-success">
-                                    <h1 className="display-3">Thank You.</h1>
-                                    <h2 className="display-4">You will get your foods soon!</h2>
-                                </div>
-                        }
                     </div>
                 </div>
+                
                 <div className="col-md-4 order-summary">
                     <h3>Order Summary</h3>
                     <h5>Items Ordered: {cart.length}</h5>
