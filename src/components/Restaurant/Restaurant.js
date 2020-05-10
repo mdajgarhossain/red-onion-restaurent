@@ -14,6 +14,7 @@ import FoodItemDetails from '../FoodItemDetails/FoodItemDetails';
 import { addToDatabaseCart, getDatabaseCart, processOrder, removeFromDatabaseCart } from '../../databaseManager';
 import foodsData from '../../foodsData/foods.json';
 import { AuthProvider, PrivateRoute } from '../Login/useAuth';
+import AboutUs from '../AboutUs/AboutUs';
 
 function Restaurant() {
     const [cart, setCart] = useState([]);
@@ -71,6 +72,7 @@ function Restaurant() {
                             <Header cart={cart}/>
                             <Banner />
                             <Foods />
+                            <AboutUs />
                         </Route>
                         <PrivateRoute path="/cart">
                             <Header cart={cart}/>
