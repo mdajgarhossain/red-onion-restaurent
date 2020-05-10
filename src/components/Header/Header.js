@@ -34,7 +34,7 @@ function Header(props) {
                             }
                             {
                                 auth.user ? 
-                                <Link to="/cart" onClick={() => {auth.signOut()}} className="nav-item nav-link signUpLink text-white">Sign Out</Link>
+                                <Link to="/" onClick={() => {auth.signOut()}} className="nav-item nav-link signUpLink text-white">Sign Out</Link>
                                 :
                                 <Link to="/login" className="nav-item nav-link signUpLink text-white">
                                 Sign Up
