@@ -15,6 +15,7 @@ import { addToDatabaseCart, getDatabaseCart, processOrder, removeFromDatabaseCar
 import foodsData from '../../foodsData/foods.json';
 import { AuthProvider, PrivateRoute } from '../Login/useAuth';
 import AboutUs from '../AboutUs/AboutUs';
+import Footer from '../Footer/Footer';
 
 function Restaurant() {
     const [cart, setCart] = useState([]);
@@ -73,6 +74,7 @@ function Restaurant() {
                             <Banner />
                             <Foods />
                             <AboutUs />
+                            <Footer />
                         </Route>
                         <PrivateRoute path="/cart">
                             <Header cart={cart}/>
