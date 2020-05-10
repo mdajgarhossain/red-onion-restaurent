@@ -84,6 +84,7 @@ function Restaurant() {
                                 removeItem={removeItem}
                                 orderPlaced={orderPlaced}
                             />
+                            <Footer />
                         </PrivateRoute>
                         <Route path="/login">
                             <Login />
@@ -91,6 +92,7 @@ function Restaurant() {
                         <Route path="/food/:foodId">
                             <Header cart={cart}/>
                             <FoodItemDetails handleCart={handleCart}/>
+                            <Footer />
                         </Route>
                         <Route path="*">
                             <Header cart={cart}/>

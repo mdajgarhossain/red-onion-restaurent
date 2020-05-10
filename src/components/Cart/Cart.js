@@ -1,29 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './Cart.css';
-import { getDatabaseCart, removeFromDatabaseCart, processOrder } from '../../databaseManager';
-import foodsData from '../../foodsData/foods.json';
 import CartItem from '../CartItem/CartItem';
 
 function Cart(props) {
     const {cart, handlePlaceOrder, removeItem, orderPlaced} = props;
-    // const [cart, setCart] = useState([]);
-
-    // const removeItem = (itemId) => {
-    //     const newCart = cart.filter(item => item.id !== itemId);
-    //     setCart(newCart);
-    //     removeFromDatabaseCart(itemId);
-    // };
-
-    // useEffect(() => {
-    //     const savedCart = getDatabaseCart();
-    //     const foodKeys = Object.keys(savedCart);
-    //     const foodItemsCart = foodKeys.map(key => {
-    //         const foodItem = foodsData.find(item => item.id == key);
-    //         foodItem.quantity = savedCart[key];
-    //         return foodItem;
-    //     });
-    //     setCart(foodItemsCart);
-    // }, []);
 
     const total = cart.reduce((total, foodItem) => total + (foodItem.price * foodItem.quantity), 0);
 
@@ -34,15 +14,10 @@ function Cart(props) {
 
     const grandTotal = (total + deliveryCost).toFixed(2);
 
-    // const handlePlaceOrder = () => {
-    //     setCart([]);
-    //     processOrder();
-    // };
-
     return (
         <div className="container cart">
             <h1 className="text-center mb-4 display-4"><u>Your Foods Cart</u></h1>
-            <div className="row">
+            <div className="row my-4">
                 <div className="col-md-8">
                     <div className="row">
                         {

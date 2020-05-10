@@ -12,7 +12,7 @@ function FoodItemDetails(props) {
     const foodItem = foodsData.find(item => item.id == foodId);
 
     return (
-        <div className="container food-item-details">
+        <div className="container food-item-details my-5">
             <div className="row">
                 <div className="col-md-6 my-5">
                     <h1>{foodItem.title}</h1>

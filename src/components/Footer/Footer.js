@@ -31,7 +31,7 @@ const Footer = () => {
                 <div className="footer-bottom d-flex justify-content-between align-items-center">
                     <small className="text-secondary">Copyright &copy;  2020 Online Food </small>
                     <ul className="list-inline">
-                        <li className="list-inline-item ml-3"><a href="">Privacy Policy.</a></li>
+                        <li className="list-inline-item ml-3"><a href="">Privacy Policy</a></li>
                         <li className="list-inline-item  ml-3"><a href="">Terms of Use</a></li>
                         <li className="list-inline-item  ml-3"><a href="">Pricing</a></li>
                     </ul>
